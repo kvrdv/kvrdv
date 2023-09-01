@@ -1,0 +1,15 @@
+@import '../../assets/styles/variables.scss';
+
+.container {
+	padding-top: 3.75rem;
+	padding-bottom: calc(10rem - 3.75rem);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	.items {
+		display: grid;
+		gap: 75px;
+		grid-template-columns: repeat(3, 1fr);
+	}
+}

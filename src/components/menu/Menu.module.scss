@@ -1,0 +1,39 @@
+@import '../../assets/styles/variables.scss';
+
+.container {
+	display: flex;
+    flex-direction: row;
+
+	> ul {
+		min-width: 13.2rem;
+
+		> li {
+			padding: 0 3.75rem;
+			border-left: 2px solid $gray;
+			transition: border-left 0.3s ease-in-out;
+            font: $itc;
+            font-weight: 600;
+
+			> a {
+				line-height: 3.75rem;
+				color: $white;
+				transition: color 0.3s ease-in-out;
+			}
+
+			&:first-child {
+				pointer-events: none;
+				font: $itc-bold;
+				text-transform: uppercase;
+				line-height: 3.75rem;
+			}
+
+			&:hover {
+				border-left: 2px solid $accent;
+
+				> a {
+					color: $accent;
+				}
+			}
+		}
+	}
+}

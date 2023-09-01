@@ -1,0 +1,52 @@
+@import '../../assets/styles/variables.scss';
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	padding-top: 3.75rem;
+	padding-bottom: calc(10rem - 3.75rem);
+	overflow: hidden;
+	overflow-x: scroll;
+
+	.items {
+		display: grid;
+		gap: 30px;
+		grid-auto-flow: column; 
+		padding: 3.75rem 0;
+		max-width: 100%;
+		overflow-x: scroll;
+		scrollbar-color: $gray $gray;
+	}
+
+	// > nav {
+	// 	> button {
+	// 		border: 0;
+	// 		padding: 0;
+	// 		background: $gray;
+	// 		cursor: pointer;
+	// 		height: 3.75rem;
+	// 		width: 3.75rem;
+
+	// 		path {
+	// 			fill: $white;
+	// 			transition: fill 0.3s ease-in-out;
+	// 		}
+
+	// 		&:hover {
+	// 			path {
+	// 				fill: $accent;
+	// 			}
+	// 		}
+
+	// 		&:first-child {
+	// 			transform: rotate(-90deg);
+	// 		}
+
+	// 		&:last-child {
+	// 			transform: rotate(90deg);
+	// 		}
+	// 	}
+	// }
+}

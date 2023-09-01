@@ -1,0 +1,90 @@
+@import '../../assets/styles/variables.scss';
+
+.container {
+	overflow: hidden;
+	padding-top: 3.75rem;
+	padding-bottom: calc(10rem - 3.75rem);
+	display: flex;
+	flex-direction: column;
+
+	.ticker {
+		position: relative;
+		padding-top: 3.75rem;
+
+		.mask {
+			position: absolute;
+			top: 3.75rem;
+			height: calc(4.2rem * 4);
+			width: 30%;
+
+			&:first-child {
+				left: 0;
+				background: linear-gradient(
+					90deg,
+					$black 0%,
+					rgba(16, 16, 18, 0) 100%
+				);
+			}
+
+			&:last-child {
+				right: 0;
+				background: linear-gradient(
+					-90deg,
+					$black 0%,
+					rgba(16, 16, 18, 0) 100%
+				);
+			}
+		}
+
+		.row {
+			display: flex;
+			flex-direction: row;
+			height: 4.5rem;
+
+			&:nth-child(2n) {
+				float: right;
+				animation-name: forward;
+				animation-duration: 60s;
+				animation-iteration-count: infinite;
+				animation-timing-function: linear;
+			}
+
+			&:nth-child(2n - 1) {
+				float: left;
+				animation-name: back;
+				animation-duration: 60s;
+				animation-iteration-count: infinite;
+				animation-timing-function: linear;
+			}
+
+			.cell {
+				user-select: none;
+				font-size: 1.5rem;
+				line-height: 3rem;
+				text-align: center;
+				margin-right: 3rem;
+				padding-top: 0.6rem;
+			}
+		}
+	}
+}
+
+@keyframes forward {
+	0% {
+		margin-right: 0;
+	}
+
+	100% {
+		margin-right: -100%;
+	}
+}
+
+@keyframes back {
+	0% {
+		margin-left: 0;
+	}
+
+	100% {
+		margin-left: -100%;
+	}
+}

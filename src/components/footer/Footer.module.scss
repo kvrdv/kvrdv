@@ -1,0 +1,43 @@
+@import '../../assets/styles/variables.scss';
+
+.container {
+	user-select: none;
+	padding-top: 3.75rem;
+
+	.content {
+		display: flex;
+		padding: 3.75rem 0;
+
+		.header {
+			font: $itc-bold;
+			text-transform: uppercase;
+			line-height: 3.75rem;
+		}
+
+		.text {
+			padding: 0 3.75rem 3rem 3.75rem;
+			background-color: $gray;
+			font: $itc;
+			font-weight: 600;
+			line-height: 1.75rem;
+			font-size: 1rem;
+			text-align: justify;
+		}
+	}
+
+	.copyright {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		height: 3.75rem;
+
+		> span {
+			text-transform: uppercase;
+			color: $accent;
+
+			> a {
+				color: $accent;
+			}
+		}
+	}
+}

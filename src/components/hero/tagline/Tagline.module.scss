@@ -1,0 +1,61 @@
+@import '../../../assets/styles/variables.scss';
+
+.container {
+	@include flex;
+	flex-wrap: wrap;
+	padding-top: 60px;
+}
+
+.item {
+	margin: 0 16px 16px 0;
+	padding: 16px 8px 10px 8px;
+	background-color: $gray;
+	color: $white;
+	font-size: 2rem;
+	line-height: 2rem;
+	user-select: none;
+	border-left: 2px solid $gray;
+	border-right: 2px solid $gray;
+	transition: border-left 0.3s ease-in-out, border-right 0.3s ease-in-out;
+}
+
+.active {
+	@for $i from 1 through 9 {
+		&:nth-child(#{$i}) {
+			animation-name: activate;
+			animation-duration: 3s;
+			animation-delay: $i * 1.5s;
+		}
+	}
+}
+
+@keyframes activate {
+	0% {
+		border-left: 2px solid $gray;
+	}
+
+	25% {
+		border-left: 2px solid $accent;
+	}
+
+	50% {
+		color: $gray;
+		background-color: $accent;
+		border-left: 2px solid $accent;
+		border-right: 2px solid $accent;
+		margin-right: 0;
+		padding-right: 24px;
+	}
+
+	75% {
+		border-right: 2px solid $accent;
+	}
+
+	100% {
+		color: $white;
+		background-color: $gray;
+		border-right: 2px solid $gray;
+		margin-right: 16px;
+		padding-right: 8px;
+	}
+}

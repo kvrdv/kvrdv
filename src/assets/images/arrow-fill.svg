@@ -1,0 +1,18 @@
+<svg
+						width="60"
+						height="60"
+						viewBox="0 0 60 60"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<rect
+							width="60"
+							height="60"
+							transform="matrix(0 -1 1 0 0 60)"
+							fill="white"
+						/>
+						<path
+							d="M30 20L40.3923 35.6522H19.6077L30 20Z"
+							fill="#101012"
+						/>
+					</svg>

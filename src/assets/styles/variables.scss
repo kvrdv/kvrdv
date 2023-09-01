@@ -1,0 +1,31 @@
+/* colors */
+$white: #ffffff;
+$black: #101012;
+$accent: #f8dc4c;
+$gray: #282828;
+
+/* fonts */
+@font-face {
+	src: url('../fonts/ITCAvantGardeStd-Bold.otf');
+	font-family: 'ITC Avant Garde Gothic Bold';
+}
+$itc-bold: 1rem 'ITC Avant Garde Gothic Bold', sans-serif;
+
+@font-face {
+	src: url('../fonts/ITCAvantGardeStd-Bk.otf');
+	font-family: 'ITC Avant Garde Gothic';
+}
+$itc: 1rem 'ITC Avant Garde Gothic', sans-serif;
+
+@font-face {
+	src: url('../fonts/ITCAvantGardeStd-Md.otf');
+	font-family: 'ITC Avant Garde Gothic Medium';
+}
+$itc-medium: 1rem 'ITC Avant Garde Gothic Medium', sans-serif;
+
+/* variables */
+@mixin flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}

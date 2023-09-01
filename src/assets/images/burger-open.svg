@@ -1,0 +1,13 @@
+<svg
+    width="60"
+    height="60"
+    viewBox="0 0 60 60"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+>
+    <path
+        d="M0 16H60V-16H0V16ZM60 44H0V76H60V44Z"
+        fill="white"
+        mask="url(#path-1-inside-1_8_7)"
+    />
+</svg>

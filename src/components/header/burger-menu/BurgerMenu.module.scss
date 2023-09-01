@@ -1,0 +1,47 @@
+@import '../../../assets/styles/variables.scss';
+
+.container {
+	z-index: 20;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: $white;
+	margin-top: -200vh;
+	transition: margin-top 0.3s ease-in-out;
+
+	.header {
+		width: 67.5rem;
+		height: 3.75rem;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin: auto;
+		padding: 3.75rem 0;
+	}
+}
+
+.active {
+	margin-top: 0vh;
+}
+
+.menu {
+	color: $gray;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	div {
+		> ul {
+			> li {
+				font: $itc-medium;
+
+				> a {
+					color: $gray;
+				}
+			}
+		}
+	}
+}
