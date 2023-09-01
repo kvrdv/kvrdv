@@ -40,7 +40,7 @@ const projectsData = [
 		],
 	},
 	{
-		title: 'utter attempt',
+		title: 'surface',
 		type: 'static',
 		url: 'https://github.com/kvrdv/surface',
 		cover: surface,
@@ -60,7 +60,7 @@ const projectsData = [
 		],
 	},
 	{
-		title: 'pathetic middle',
+		title: 'noemi',
 		type: 'static',
 		url: 'https://github.com/kvrdv/noemi',
 		cover: noemi,
@@ -76,7 +76,7 @@ const projectsData = [
 		],
 	},
 	{
-		title: 'dogs driving',
+		title: 'web agency',
 		type: 'static',
 		url: 'https://github.com/kvrdv/bncbn',
 		cover: bncbn,
@@ -100,7 +100,7 @@ const projectsData = [
 		],
 	},
 	{
-		title: 'smoggy sleet',
+		title: 'keksby',
 		type: 'static',
 		url: 'https://github.com/kvrdv/keksby',
 		cover: keksby,
@@ -124,7 +124,7 @@ const projectsData = [
 		],
 	},
 	{
-		title: 'furtive letter',
+		title: 'clock work',
 		type: 'frontend',
 		url: 'https://github.com/kvrdv/clock-work',
 		cover: clockWork,
@@ -144,7 +144,7 @@ const projectsData = [
 		],
 	},
 	{
-		title: 'overt motion',
+		title: 'password generator',
 		type: 'frontend',
 		url: 'https://github.com/kvrdv/unqwertier',
 		cover: passGen,
@@ -164,7 +164,7 @@ const projectsData = [
 		],
 	},
 	{
-		title: 'oceanic picture',
+		title: 'meme generator',
 		type: 'frontend',
 		url: 'https://github.com/kvrdv/memegen',
 		cover: memegen,
@@ -184,7 +184,7 @@ const projectsData = [
 		],
 	},
 	{
-		title: 'sweet spoon',
+		title: 'kbact',
 		type: 'frontend',
 		url: 'https://github.com/kvrdv/kbact',
 		cover: kbact,
@@ -204,9 +204,9 @@ const projectsData = [
 		],
 	},
 	{
-		title: 'amused alley',
+		title: 'pass manager on react',
 		type: 'frontend',
-		url: 'https://github.com/kvrdv/unqwery-front-react',
+		url: 'https://github.com/kvrdv/unqwerty-front-react',
 		cover: unqwerty1,
 		tags: [
 			{
@@ -228,7 +228,7 @@ const projectsData = [
 		],
 	},
 	{
-		title: 'cruel cactus',
+		title: 'pass manager on next',
 		type: 'frontend',
 		url: 'https://github.com/kvrdv/unqwerty-front-next',
 		cover: unqwerty2,
@@ -248,7 +248,7 @@ const projectsData = [
 		],
 	},
 	{
-		title: 'profuse polish',
+		title: 'courses app',
 		type: 'backend',
 		url: 'https://github.com/kvrdv/nodejs-test',
 		cover: courses,
@@ -268,7 +268,7 @@ const projectsData = [
 		],
 	},
 	{
-		title: 'billowy books',
+		title: 'pass manager on express',
 		type: 'backend',
 		url: 'https://github.com/kvrdv/unqwerty-back-express',
 		cover: express,
@@ -288,7 +288,7 @@ const projectsData = [
 		],
 	},
 	{
-		title: 'useless umbrella',
+		title: 'pass manager on nest',
 		type: 'backend',
 		url: 'https://github.com/kvrdv/unqwerty-back-nest',
 		cover: nest,
@@ -308,7 +308,7 @@ const projectsData = [
 		],
 	},
 	{
-		title: 'straight corn',
+		title: 'JSON compare',
 		type: 'backend',
 		url: 'https://github.com/kvrdv/test-gpb',
 		cover: node,
@@ -323,22 +323,6 @@ const projectsData = [
 			},
 		],
 	},
-	// {
-	// 	title: 'coming soon',
-	// 	type: 'backend',
-	// 	url: '#',
-	// 	cover: node,
-	// 	tags: [
-	// 		{
-	// 			tagName: 'coming',
-	// 			tagUrl: '',
-	// 		},
-	// 		{
-	// 			tagName: 'soon',
-	// 			tagUrl: '',
-	// 		},
-	// 	],
-	// },
 ];
 
 export default projectsData;
