@@ -15,3 +15,5 @@ software and infrastructure IT projects. The use of the
 above technologies, can be seen in my projects.`;
 
 export default footerData;
+
+

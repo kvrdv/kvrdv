@@ -13,6 +13,7 @@ import surface from '../assets/images/projects/surface.png';
 import kbact from '../assets/images/projects/kbact.png';
 import memegen from '../assets/images/projects/memegen.png';
 import keksby from '../assets/images/projects/keksby.png';
+import avifly from '../assets/images/projects/avifly.png';
 
 const projectsData = [
 	{
@@ -128,6 +129,26 @@ const projectsData = [
 		type: 'frontend',
 		url: 'https://github.com/kvrdv/clock-work',
 		cover: clockWork,
+		tags: [
+			{
+				tagName: 'React',
+				tagUrl: 'https://react.dev/',
+			},
+			{
+				tagName: 'Webpack',
+				tagUrl: 'https://webpack.js.org/',
+			},
+			{
+				tagName: 'Npm',
+				tagUrl: 'https://www.npmjs.com/',
+			},
+		],
+	},
+	{
+		title: 'avia tickets',
+		type: 'frontend',
+		url: 'https://github.com/kvrdv/avifly-test',
+		cover: avifly,
 		tags: [
 			{
 				tagName: 'React',
