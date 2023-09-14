@@ -2,20 +2,92 @@
 
 .container {
 	overflow: hidden;
-	padding-top: 3.75rem;
-	padding-bottom: calc(10rem - 3.75rem);
 	display: flex;
 	flex-direction: column;
 
+	@media (max-width: $layout-mobile) {
+		padding-top: 2rem;
+		padding-bottom: calc(6rem - 2rem);
+
+		.ticker {
+			padding-top: 2.5rem;
+
+			.mask {
+				top: 2.5rem;
+				height: calc(4.2rem * 4);
+				width: 30%;
+			}
+
+			.row {
+				height: 2.5rem;
+
+				.cell {
+					font-size: 0.875rem;
+					line-height: 0.75rem;
+					margin-right: 1rem;
+					padding-top: 0.6rem;
+				}
+			}
+		}
+	}
+
+	@media (min-width: $layout-tablet-from) and (max-width: $layout-tablet-to) {
+		padding-top: 3rem;
+		padding-bottom: calc(8rem - 3rem);
+
+		.ticker {
+			padding-top: 3rem;
+
+			.mask {
+				top: 3rem;
+				height: calc(4.2rem * 4);
+				width: 30%;
+			}
+
+			.row {
+				height: 3.75rem;
+
+				.cell {
+					font-size: 1.125rem;
+					line-height: 2.5rem;
+					margin-right: 2.125rem;
+					padding-top: 1.4rem;
+				}
+			}
+		}
+	}
+
+	@media (min-width: $layout-desktop) {
+		padding-top: 3.75rem;
+		padding-bottom: calc(10rem - 3.75rem);
+
+		.ticker {
+			padding-top: 3.75rem;
+
+			.mask {
+				top: 3.75rem;
+				height: calc(4.2rem * 4);
+				width: 30%;
+			}
+
+			.row {
+				height: 4.5rem;
+
+				.cell {
+					font-size: 1.5rem;
+					line-height: 3rem;
+					margin-right: 3rem;
+					padding-top: 0.6rem;
+				}
+			}
+		}
+	}
+
 	.ticker {
 		position: relative;
-		padding-top: 3.75rem;
 
 		.mask {
 			position: absolute;
-			top: 3.75rem;
-			height: calc(4.2rem * 4);
-			width: 30%;
 
 			&:first-child {
 				left: 0;
@@ -39,7 +111,6 @@
 		.row {
 			display: flex;
 			flex-direction: row;
-			height: 4.5rem;
 
 			&:nth-child(2n) {
 				float: right;
@@ -59,11 +130,7 @@
 
 			.cell {
 				user-select: none;
-				font-size: 1.5rem;
-				line-height: 3rem;
 				text-align: center;
-				margin-right: 3rem;
-				padding-top: 0.6rem;
 			}
 		}
 	}

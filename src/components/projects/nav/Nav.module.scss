@@ -1,24 +1,52 @@
 @import '../../../assets/styles/variables.scss';
 
 .container {
-	margin: 3.75rem 0;
 	display: grid;
 	grid-auto-flow: column;
 	border: 2px solid $gray;
-	grid-gap: 2px;
+
+	@media (max-width: $layout-mobile) {
+		margin: 2.5rem 0;
+		grid-gap: 2px;
+	}
+
+	@media (min-width: $layout-tablet-from) and (max-width: $layout-tablet-to) {
+		margin: 3rem 0;
+		grid-gap: 2px;
+	}
+
+	@media (min-width: $layout-desktop) {
+		margin: 3.75rem 0;
+		grid-gap: 2px;
+	}
 }
 
 .item {
-	height: 3.75rem;
-	font-size: 1.25rem;
 	text-transform: uppercase;
 	box-sizing: border-box;
-	padding: 20px;
 	cursor: pointer;
 	user-select: none;
 	background-color: $black;
 	color: $white;
 	transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+	@media (max-width: $layout-mobile) {
+		padding: 0.9rem;
+		height: 2.5rem;
+		font-size: 0.875rem;
+	}
+
+	@media (min-width: $layout-tablet-from) and (max-width: $layout-tablet-to) {
+		padding: 1.1rem;
+		height: 3rem;
+		font-size: 1rem;
+	}
+
+	@media (min-width: $layout-desktop) {
+		padding: 1.25rem;
+		height: 3.75rem;
+		font-size: 1.25rem;
+	}
 
 	&:nth-child(2) {
 		border: none;

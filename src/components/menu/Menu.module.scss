@@ -2,20 +2,71 @@
 
 .container {
 	display: flex;
-    flex-direction: row;
+	flex-direction: row;
+
+	@media (max-width: $layout-mobile) {
+		> ul {
+			width: 50%;
+			min-width: 8.375rem;
+
+			> li {
+				padding: 0 2.5rem;
+
+				> a {
+					line-height: 2.5rem;
+					font-size: 0.6rem;
+				}
+
+				&:first-child {
+					line-height: 1.25rem;
+				}
+			}
+		}
+	}
+
+	@media (min-width: $layout-tablet-from) and (max-width: $layout-tablet-to) {
+		> ul {
+			max-width: 11rem;
+			min-width: 10.4rem;
+
+			> li {
+				padding: 0 3rem;
+
+				> a {
+					line-height: 3rem;
+					font-size: 0.75rem;
+				}
+
+				&:first-child {
+					line-height: 3rem;
+				}
+			}
+		}
+	}
+
+	@media (min-width: $layout-desktop) {
+		> ul {
+			min-width: 13.2rem;
+
+			> li {
+				padding: 0 3.75rem;
+
+				> a {
+					line-height: 3.75rem;
+					font-size: 1rem;
+				}
+			}
+		}
+	}
 
 	> ul {
-		min-width: 13.2rem;
-
 		> li {
-			padding: 0 3.75rem;
 			border-left: 2px solid $gray;
 			transition: border-left 0.3s ease-in-out;
-            font: $itc;
-            font-weight: 600;
+			font: $itc;
+			font-weight: 600;
 
 			> a {
-				line-height: 3.75rem;
 				color: $white;
 				transition: color 0.3s ease-in-out;
 			}
@@ -24,7 +75,21 @@
 				pointer-events: none;
 				font: $itc-bold;
 				text-transform: uppercase;
-				line-height: 3.75rem;
+
+				@media (max-width: $layout-mobile) {
+					line-height: 2.5rem;
+					font-size: 0.6rem;
+				}
+
+				@media (min-width: $layout-tablet-from) and (max-width: $layout-tablet-to) {
+					line-height: 3rem;
+					font-size: 0.75rem;
+				}
+
+				@media (min-width: $layout-desktop) {
+					line-height: 3.75rem;
+					font-size: 1rem;
+				}
 			}
 
 			&:hover {

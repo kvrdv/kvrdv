@@ -2,26 +2,82 @@
 
 .container {
 	user-select: none;
-	padding-top: 3.75rem;
+	max-width: 100%;
+
+	@media (max-width: $layout-mobile) {
+		padding-top: 2.5rem;
+	}
+
+	@media (min-width: $layout-tablet-from) and (max-width: $layout-tablet-to) {
+		padding-top: 3rem;
+	}
+
+	@media (min-width: $layout-desktop) {
+		padding-top: 3.75rem;
+	}
 
 	.content {
 		display: flex;
-		padding: 3.75rem 0;
 
 		.header {
 			font: $itc-bold;
 			text-transform: uppercase;
-			line-height: 3.75rem;
 		}
 
 		.text {
-			padding: 0 3.75rem 3rem 3.75rem;
 			background-color: $gray;
 			font: $itc;
 			font-weight: 600;
-			line-height: 1.75rem;
-			font-size: 1rem;
 			text-align: justify;
+		}
+
+		@media (max-width: $layout-mobile) {
+			padding: 2.5rem 0;
+			flex-direction: column;
+
+			.header {
+				line-height: 2.5rem;
+				font-size: 0.625rem;
+			}
+
+			.text {
+				padding: 0 2.5rem 2rem 2.5rem;
+				line-height: 1rem;
+				font-size: 0.625rem;
+				margin-top: 2rem;
+			}
+		}
+
+		@media (min-width: $layout-tablet-from) and (max-width: $layout-tablet-to) {
+			padding: 3rem 0;
+			flex-direction: row;
+
+			.header {
+				line-height: 3rem;
+				font-size: 0.75rem;
+			}
+
+			.text {
+				padding: 0 3rem 2rem 3rem;
+				line-height: 1.2rem;
+				font-size: 0.75rem;
+			}
+		}
+
+		@media (min-width: $layout-desktop) {
+			padding: 3.75rem 0;
+			flex-direction: row;
+
+			.header {
+				line-height: 3.75rem;
+				font-size: 1rem;
+			}
+
+			.text {
+				padding: 0 3.75rem 3rem 3.75rem;
+				line-height: 1.75rem;
+				font-size: 1rem;
+			}
 		}
 	}
 
@@ -29,7 +85,21 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		height: 3.75rem;
+
+		@media (max-width: $layout-mobile) {
+			height: 2.5rem;
+			font-size: 0.625rem;
+		}
+
+		@media (min-width: $layout-tablet-from) and (max-width: $layout-tablet-to) {
+			height: 3rem;
+			font-size: 0.75rem;
+		}
+
+		@media (min-width: $layout-desktop) {
+			height: 3.75rem;
+			font-size: 1rem;
+		}
 
 		> span {
 			text-transform: uppercase;

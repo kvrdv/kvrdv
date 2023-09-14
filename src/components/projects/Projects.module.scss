@@ -1,15 +1,41 @@
 @import '../../assets/styles/variables.scss';
 
 .container {
-	padding-top: 3.75rem;
-	padding-bottom: calc(10rem - 3.75rem);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	
+
+	@media (max-width: $layout-mobile) {
+		padding-top: 2.5rem;
+		padding-bottom: 4rem;
+	}
+
+	@media (min-width: $layout-tablet-from) and (max-width: $layout-tablet-to) {
+		padding-top: 3rem;
+		padding-bottom: 5rem;
+	}
+
+	@media (min-width: $layout-desktop) {
+		padding-top: 3.75rem;
+		padding-bottom: calc(10rem - 3.75rem);
+	}
+
 	.items {
 		display: grid;
-		gap: 75px;
-		grid-template-columns: repeat(3, 1fr);
+
+		@media (max-width: $layout-mobile) {
+			gap: 1.25rem;
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@media (min-width: $layout-tablet-from) and (max-width: $layout-tablet-to) {
+			gap: 3rem;
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		@media (min-width: $layout-desktop) {
+			gap: 4.7rem;
+			grid-template-columns: repeat(3, 1fr);
+		}
 	}
 }

@@ -3,20 +3,96 @@
 .container {
 	position: relative;
 	background: $gray;
-	width: calc(12rem - 2rem);
-	height: calc(14rem - 2rem);
-	padding: 1rem;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	cursor: pointer;
 	transition: background 0.3s ease-in-out;
 
+	@media (max-width: $layout-mobile) {
+		width: 8.4rem;
+		height: 10.7rem;
+		padding: 0.75rem;
+
+		> h4,
+		> span {
+			font-size: 0.875rem;
+			padding: 5px 5px 2px 5px;
+		}
+
+		> span {
+			bottom: 1rem;
+		}
+
+		> img {
+			width: 6rem;
+			margin: 0.75rem 0;
+		}
+
+		&:hover {
+			> img {
+				width: 8.4rem;
+			}
+		}
+	}
+
+	@media (min-width: $layout-tablet-from) and (max-width: $layout-tablet-to) {
+		width: 6.7rem;
+		height: 9.5rem;
+		padding: 0.75rem;
+
+		> h4,
+		> span {
+			font-size: 0.875rem;
+			padding: 5px 5px 2px 5px;
+		}
+
+		> span {
+			bottom: 0.75rem;
+		}
+
+		> img {
+			width: 5rem;
+			margin: 0.75rem 0;
+		}
+
+		&:hover {
+			> img {
+				width: 6.7rem;
+			}
+		}
+	}
+
+	@media (min-width: $layout-desktop) {
+		width: calc(12rem - 2rem);
+		height: calc(14rem - 2rem);
+		padding: 1rem;
+
+		> h4,
+		> span {
+			font-size: 1.1rem;
+			padding: 7px 7px 3px 7px;
+		}
+
+		> span {
+			bottom: 0.8rem;
+		}
+
+		> img {
+			width: 6.3rem;
+			margin: 1rem 0;
+		}
+
+		&:hover {
+			> img {
+				width: calc(12rem - 2rem);
+			}
+		}
+	}
+
 	> h4,
 	> span {
 		display: inline-block;
-		font-size: 1.1rem;
-		padding: 7px 7px 3px 7px;
 		background: $white;
 		color: $black;
 		user-select: none;
@@ -24,14 +100,11 @@
 
 	> span {
 		position: absolute;
-		bottom: 1rem;
 		opacity: 1;
 		transition: opacity 0.3s ease-in-out;
 	}
 
 	> img {
-		width: 6.3rem;
-		margin: 1rem 0;
 		transition: width 0.3s ease-in-out, margin 0.3s ease-in-out;
 	}
 
@@ -39,7 +112,6 @@
 		background: $white;
 
 		> img {
-			width: calc(12rem - 2rem);
 			margin: 0;
 		}
 

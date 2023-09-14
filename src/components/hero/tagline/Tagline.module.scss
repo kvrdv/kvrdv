@@ -3,59 +3,219 @@
 .container {
 	@include flex;
 	flex-wrap: wrap;
-	padding-top: 60px;
-}
 
-.item {
-	margin: 0 16px 16px 0;
-	padding: 16px 8px 10px 8px;
-	background-color: $gray;
-	color: $white;
-	font-size: 2rem;
-	line-height: 2rem;
-	user-select: none;
-	border-left: 2px solid $gray;
-	border-right: 2px solid $gray;
-	transition: border-left 0.3s ease-in-out, border-right 0.3s ease-in-out;
-}
+	@media (max-width: $layout-mobile) {
+		padding-top: 2.5rem;
 
-.active {
-	@for $i from 1 through 9 {
-		&:nth-child(#{$i}) {
-			animation-name: activate;
-			animation-duration: 3s;
-			animation-delay: $i * 1.5s;
+		.item {
+			background-color: $gray;
+			color: $white;
+			user-select: none;
+			border-left: 2px solid $gray;
+			border-right: 2px solid $gray;
+			transition: border-left 0.3s ease-in-out,
+				border-right 0.3s ease-in-out;
+
+			//
+			margin-top: 0;
+			margin-bottom: 12px;
+			margin-left: 0;
+			//
+			padding-top: 8px;
+			padding-bottom: 4px;
+			padding-left: 4px;
+			//
+
+			font-size: 16px;
+			line-height: 16px;
+
+			margin-right: 12px;
+			padding-right: 4px;
+		}
+
+		.active {
+			@for $i from 1 through 9 {
+				&:nth-child(#{$i}) {
+					animation-name: activate-mobile;
+					animation-duration: 3s;
+					animation-delay: $i * 1.5s;
+				}
+			}
+
+			@keyframes activate-mobile {
+				0% {
+					border-left: 2px solid $gray;
+				}
+
+				25% {
+					border-left: 2px solid $accent;
+				}
+
+				50% {
+					color: $gray;
+					background-color: $accent;
+					border-left: 2px solid $accent;
+					border-right: 2px solid $accent;
+					margin-right: 0;
+					padding-right: 16px;
+				}
+
+				75% {
+					border-right: 2px solid $accent;
+				}
+
+				100% {
+					color: $white;
+					background-color: $gray;
+					border-right: 2px solid $gray;
+					margin-right: 12px;
+					padding-right: 4px;
+				}
+			}
 		}
 	}
-}
 
-@keyframes activate {
-	0% {
-		border-left: 2px solid $gray;
+	@media (min-width: $layout-tablet-from) and (max-width: $layout-tablet-to) {
+		padding-top: 3rem;
+
+		.item {
+			background-color: $gray;
+			color: $white;
+			user-select: none;
+			border-left: 2px solid $gray;
+			border-right: 2px solid $gray;
+			transition: border-left 0.3s ease-in-out,
+				border-right 0.3s ease-in-out;
+
+			//
+			margin-top: 0;
+			margin-bottom: 12px;
+			margin-left: 0;
+			//
+			padding-top: 12px;
+			padding-bottom: 8px;
+			padding-left: 6px;
+			//
+
+			font-size: 26px;
+			line-height: 26px;
+
+			margin-right: 12px;
+			padding-right: 6px;
+		}
+
+		.active {
+			@for $i from 1 through 9 {
+				&:nth-child(#{$i}) {
+					animation-name: activate-tablet;
+					animation-duration: 3s;
+					animation-delay: $i * 1.5s;
+				}
+			}
+
+			@keyframes activate-tablet {
+				0% {
+					border-left: 2px solid $gray;
+				}
+
+				25% {
+					border-left: 2px solid $accent;
+				}
+
+				50% {
+					color: $gray;
+					background-color: $accent;
+					border-left: 2px solid $accent;
+					border-right: 2px solid $accent;
+					margin-right: 0;
+					padding-right: 18px;
+				}
+
+				75% {
+					border-right: 2px solid $accent;
+				}
+
+				100% {
+					color: $white;
+					background-color: $gray;
+					border-right: 2px solid $gray;
+					margin-right: 12px;
+					padding-right: 6px;
+				}
+			}
+		}
 	}
 
-	25% {
-		border-left: 2px solid $accent;
-	}
+	@media (min-width: $layout-desktop) {
+		padding-top: 3.75rem;
 
-	50% {
-		color: $gray;
-		background-color: $accent;
-		border-left: 2px solid $accent;
-		border-right: 2px solid $accent;
-		margin-right: 0;
-		padding-right: 24px;
-	}
+		.item {
+			background-color: $gray;
+			color: $white;
+			user-select: none;
+			border-left: 2px solid $gray;
+			border-right: 2px solid $gray;
+			transition: border-left 0.3s ease-in-out,
+				border-right 0.3s ease-in-out;
 
-	75% {
-		border-right: 2px solid $accent;
-	}
+			//
+			margin-top: 0;
+			margin-bottom: 16px;
+			margin-left: 0;
+			//
+			padding-top: 16px;
+			padding-bottom: 10px;
+			padding-left: 8px;
+			//
 
-	100% {
-		color: $white;
-		background-color: $gray;
-		border-right: 2px solid $gray;
-		margin-right: 16px;
-		padding-right: 8px;
+			font-size: 32px;
+			line-height: 32px;
+
+			margin-right: 16px;
+			padding-right: 8px;
+		}
+
+		.active {
+			@for $i from 1 through 9 {
+				&:nth-child(#{$i}) {
+					animation-name: activate-desktop;
+					animation-duration: 3s;
+					animation-delay: $i * 1.5s;
+				}
+			}
+
+			@keyframes activate-desktop {
+				0% {
+					border-left: 2px solid $gray;
+				}
+
+				25% {
+					border-left: 2px solid $accent;
+				}
+
+				50% {
+					color: $gray;
+					background-color: $accent;
+					border-left: 2px solid $accent;
+					border-right: 2px solid $accent;
+
+					margin-right: 0;
+					padding-right: 24px;
+				}
+
+				75% {
+					border-right: 2px solid $accent;
+				}
+
+				100% {
+					color: $white;
+					background-color: $gray;
+					border-right: 2px solid $gray;
+
+					margin-right: 16px;
+					padding-right: 8px;
+				}
+			}
+		}
 	}
 }

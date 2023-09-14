@@ -19,6 +19,19 @@ a {
 }
 
 .container {
-	max-width: 67.5rem;
 	margin: 0 auto;
+
+	@media (max-width: $layout-mobile) {
+		min-width: 17rem;
+		max-width: 21rem;
+	}
+
+	@media (min-width: $layout-tablet-from) and (max-width: $layout-tablet-to) {
+		min-width: 22rem;
+		max-width: 44rem;
+	}
+
+	@media (min-width: $layout-desktop) {
+		max-width: 67rem;
+	}
 }

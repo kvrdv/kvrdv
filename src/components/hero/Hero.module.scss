@@ -1,5 +1,15 @@
 @import '../../assets/styles/variables.scss';
 
 .container {
-	padding-bottom: calc(10rem - 3.75rem - 1rem);
+	@media (max-width: $layout-mobile) {
+		padding-bottom: 4rem;
+	}
+
+	@media (min-width: $layout-tablet-from) and (max-width: $layout-tablet-to) {
+		padding-bottom: 5rem;
+	}
+
+	@media (min-width: $layout-desktop) {
+		padding-bottom: calc(10rem - 3.75rem - 1rem);
+	}
 }

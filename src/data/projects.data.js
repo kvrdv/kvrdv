@@ -231,20 +231,16 @@ const projectsData = [
 		cover: unqwerty1,
 		tags: [
 			{
+				tagName: 'Vite',
+				tagUrl: 'https://vitejs.dev/',
+			},
+			{
 				tagName: 'React Router',
 				tagUrl: 'https://reactrouter.com/en/main',
 			},
 			{
-				tagName: 'React Select',
-				tagUrl: 'https://react-select.com/',
-			},
-			{
 				tagName: 'TanStack Query',
 				tagUrl: 'https://tanstack.com/query/latest',
-			},
-			{
-				tagName: 'Vite',
-				tagUrl: 'https://vitejs.dev/',
 			},
 		],
 	},

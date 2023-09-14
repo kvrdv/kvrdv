@@ -1,10 +1,16 @@
-/* colors */
+// colors
 $white: #ffffff;
 $black: #101012;
 $accent: #f8dc4c;
 $gray: #282828;
 
-/* fonts */
+// media queries
+$layout-mobile: 575px;
+$layout-tablet-from: 576px;
+$layout-tablet-to: 1079px;
+$layout-desktop: 1080px;
+
+// fonts
 @font-face {
 	src: url('../fonts/ITCAvantGardeStd-Bold.otf');
 	font-family: 'ITC Avant Garde Gothic Bold';
@@ -23,7 +29,7 @@ $itc: 1rem 'ITC Avant Garde Gothic', sans-serif;
 }
 $itc-medium: 1rem 'ITC Avant Garde Gothic Medium', sans-serif;
 
-/* variables */
+// variables
 @mixin flex {
 	display: flex;
 	flex-direction: row;
