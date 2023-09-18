@@ -19,13 +19,13 @@
 
 		@media (max-width: $layout-mobile) {
 			height: 2.5rem;
-			max-width: 17rem;
+			max-width: 90%;
 			padding: 2.5rem 0;
 		}
 
 		@media (min-width: $layout-tablet-from) and (max-width: $layout-tablet-to) {
 			height: 3rem;
-			max-width: 50rem;
+			max-width: 90%;
 			padding: 3rem 0;
 		}
 
@@ -44,9 +44,24 @@
 .menu {
 	color: $gray;
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+
+	@media (max-width: $layout-mobile) {
+		top: 35%;
+		left: 50%;
+		transform: translate(-50%, -50%);	
+	}
+
+	@media (min-width: $layout-tablet-from) and (max-width: $layout-tablet-to) {
+		top: 30%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	@media (min-width: $layout-desktop) {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
 
 	div {
 		> ul {

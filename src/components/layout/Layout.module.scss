@@ -23,12 +23,12 @@ a {
 
 	@media (max-width: $layout-mobile) {
 		min-width: 17rem;
-		max-width: 21rem;
+		max-width: 90%;
 	}
 
 	@media (min-width: $layout-tablet-from) and (max-width: $layout-tablet-to) {
 		min-width: 22rem;
-		max-width: 44rem;
+		max-width: 90%;
 	}
 
 	@media (min-width: $layout-desktop) {

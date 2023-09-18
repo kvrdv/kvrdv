@@ -25,21 +25,21 @@
 
 		@media (max-width: $layout-mobile) {
 			&:nth-child(-n + 5) {
-				left: -57%;
+				left: -40%;
 			}
 
 			&:nth-child(n + 5) {
-				right: -57%;
+				right: -40%;
 			}
 		}
 
 		@media (min-width: $layout-tablet-from) and (max-width: $layout-tablet-to) {
 			&:nth-child(-n + 5) {
-				left: -37%;
+				left: -35%;
 			}
 
 			&:nth-child(n + 5) {
-				right: -37%;
+				right: -35%;
 			}
 		}
 

@@ -6,15 +6,14 @@
 
 	@media (max-width: $layout-mobile) {
 		> ul {
-			width: 50%;
-			min-width: 8.375rem;
-
 			> li {
+				width: 50%;
 				padding: 0 2.5rem;
+				min-width: 8.375rem;
 
 				> a {
 					line-height: 2.5rem;
-					font-size: 0.6rem;
+					font-size: 1rem;
 				}
 
 				&:first-child {
@@ -26,11 +25,10 @@
 
 	@media (min-width: $layout-tablet-from) and (max-width: $layout-tablet-to) {
 		> ul {
-			max-width: 11rem;
-			min-width: 10.4rem;
-
 			> li {
 				padding: 0 3rem;
+				max-width: 11rem;
+				min-width: 10.4rem;
 
 				> a {
 					line-height: 3rem;
@@ -78,7 +76,7 @@
 
 				@media (max-width: $layout-mobile) {
 					line-height: 2.5rem;
-					font-size: 0.6rem;
+					font-size: 1rem;
 				}
 
 				@media (min-width: $layout-tablet-from) and (max-width: $layout-tablet-to) {

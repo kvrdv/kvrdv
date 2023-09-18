@@ -14,6 +14,7 @@ import kbact from '../assets/images/projects/kbact.png';
 import memegen from '../assets/images/projects/memegen.png';
 import keksby from '../assets/images/projects/keksby.png';
 import avifly from '../assets/images/projects/avifly.png';
+import todo from '../assets/images/projects/todo.png';
 
 const projectsData = [
 	{
@@ -141,6 +142,30 @@ const projectsData = [
 			{
 				tagName: 'Npm',
 				tagUrl: 'https://www.npmjs.com/',
+			},
+		],
+	},
+	{
+		title: 'todo app',
+		type: 'frontend',
+		url: 'https://github.com/kvrdv/todo-test',
+		cover: todo,
+		tags: [
+			{
+				tagName: 'React',
+				tagUrl: 'https://react.dev/',
+			},
+			{
+				tagName: 'Webpack',
+				tagUrl: 'https://webpack.js.org/',
+			},
+			{
+				tagName: 'Npm',
+				tagUrl: 'https://www.npmjs.com/',
+			},
+			{
+				tagName: 'TypeScript',
+				tagUrl: 'https://www.typescriptlang.org/',
 			},
 		],
 	},
