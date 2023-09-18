@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kvrdv/static/css/main.13a8902d.css",
-    "main.js": "/kvrdv/static/js/main.705af7d6.js",
+    "main.css": "/kvrdv/static/css/main.93aaaf2a.css",
+    "main.js": "/kvrdv/static/js/main.2ed811aa.js",
     "static/media/keksby.png": "/kvrdv/static/media/keksby.5beec002e5a3aa867496.png",
     "static/media/node.png": "/kvrdv/static/media/node.5caa59ebbbb11420f28e.png",
     "static/media/memegen.png": "/kvrdv/static/media/memegen.c1568a1f0737d9da890c.png",
@@ -17,6 +17,7 @@
     "static/media/bncbn.png": "/kvrdv/static/media/bncbn.0e14896d99eedea43907.png",
     "static/media/unqwerty2.png": "/kvrdv/static/media/unqwerty2.744e23165c5de43fcb58.png",
     "static/media/kbact.png": "/kvrdv/static/media/kbact.9c296fa76828c1ed5187.png",
+    "static/media/todo.png": "/kvrdv/static/media/todo.4c54b464d9e8c55cea52.png",
     "static/media/avifly.png": "/kvrdv/static/media/avifly.8a262252f48fef718ba2.png",
     "static/media/qr-headhunter.svg": "/kvrdv/static/media/qr-headhunter.d5f4fc0b90e9f304b8171c42bf90c1e8.svg",
     "static/media/ITCAvantGardeStd-Bold.otf": "/kvrdv/static/media/ITCAvantGardeStd-Bold.ae1ac2af78a403d9e2aa.otf",
@@ -38,11 +39,11 @@
     "static/media/graphic-8.svg": "/kvrdv/static/media/graphic-8.37650ae897a1951015e8d337b3166531.svg",
     "index.html": "/kvrdv/index.html",
     "static/media/arrow.svg": "/kvrdv/static/media/arrow.327a87843e969a4d360d9d18583ede1a.svg",
-    "main.13a8902d.css.map": "/kvrdv/static/css/main.13a8902d.css.map",
-    "main.705af7d6.js.map": "/kvrdv/static/js/main.705af7d6.js.map"
+    "main.93aaaf2a.css.map": "/kvrdv/static/css/main.93aaaf2a.css.map",
+    "main.2ed811aa.js.map": "/kvrdv/static/js/main.2ed811aa.js.map"
   },
   "entrypoints": [
-    "static/css/main.13a8902d.css",
-    "static/js/main.705af7d6.js"
+    "static/css/main.93aaaf2a.css",
+    "static/js/main.2ed811aa.js"
   ]
 }
