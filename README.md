@@ -1,6 +1,6 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=388BFD&width=435&lines=Hi!+%F0%9F%91%8B)](https://git.io/typing-svg)
 
-I've been programming professionally for 4 years, the last 1.5 years I've been doing fulltime commercial development in a large bank. I specialize in frontend, using React/Javascript. I work with various CSS preprocessors and frameworks such as SCSS, Tailwind, Bootstrap, CSS modules and others. I have experience with the Git version control system via GitHub and Bitbucket. I use Yarn, Npm, Webpack, Vite package managers and builders. I do engineering, design, and prototyping in Figma. I have used Jira, Notion, Lotus Notes as project management systems. Practicing a bit with backend on Node (Express, Next) and Mongo/SQL databases. I also have experience in managing a team of up to 5 employees and managing large software and infrastructure IT projects.
+Frontend Developer with 4 years of professional experience, including 2 years of successful work in fintech sector in commercial development at a major bank. Proficient in TypeScript, React, Node.js, and a range of latest core frontend technologies. In the past, I have experience in team management as a project manager. I am seeking opportunities to apply my experience in creating efficient and user-friendly applications in the role of a frontend developer.
 
 ---
 ### Tech stack:
